@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Todo</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container-s">
+			<!-- NAVBAR -->
+      <section class="content-wrapper-s">
+        <div class="main-content-s">
+          <div class="topnav">
+            <a href="#home" class="nav-links first"> 
+              <span class="logo-brand">FANCY</span> 
+              <span class="logo">TODO</span>
+            </a>
+            <a href="#home" id="nav-home" class="nav-links link active">Home</a>
+            <!-- <a href="#" id="nav-3rd" class="nav-links link">3rd API Temp</a> -->
+						<a href="#" id="nav-add" class="nav-links link">Add Todo</a>
+            <a href="#" id="nav-logout" class="nav-links link">Logout</a>
+          </div>
+					
+					
+					<!-- TODO LIST -->
+					<div class="info" id="form-list">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="strengths" >
+							<p class="salutation">Welcome, here some of todo list available. </p>
+								<div id="todo-list">
+									<!-- <div class="row">
+										<div class="col-md-5" style="padding-bottom: 30px;">
+											<div class="card card-3">
+												<h3>INI J	UDUL</h3>
+												<p>Ini description.</p>
+												<label>Due Date :</label>
+												<p>ini date</p>
+												<label>Status :</label>
+												<p>done / <a href=""> change</a> </p>
+											</div>
+										</div>
+									</div> -->
+								</div>
+						</div>
+					</div>
+
+
+					<!-- ADD TODO LIST -->
+					<form id="form-add">
+						<div class="info" >
+							<div class="circle1"></div>
+							<div class="circle2"></div>
+						
+							<div id="page-wrap">
+								<div class="box center">
+									<h2>Add Todo List</h2>
+									<div>
+										<p>Title :</p>
+										<input type="text" name="" id="add-title">
+									</div>
+									<div>
+										<p>Description :</p>
+										<input type="text" name="" id="add-desc">
+									</div>
+									<div>
+										<p>Status :</p>
+										<input type="text" name="" placeholder="done / undone" id="add-status">
+									</div>
+									<div>
+										<p>Due Date :</p>
+										<input type="date" name="" id="add-date">
+									</div>
+									<button class="btn" type="submit">Save</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<!-- MODIF STATUS TODO LIST -->
+					<form id="form-modif">
+						<div class="info" >
+							<div class="circle1"></div>
+							<div class="circle2"></div>
+						
+							<div id="page-wrap">
+								<div class="box center">
+									<h2>Edit Status Todo List</h2>
+									<div>
+										<p>Status :</p>
+										<input type="text" name="" id="modif-status">
+										<input type="hidden" name="" id="modif-id">
+									</div>
+									<button class="btn" type="submit">Save</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+
+					<!-- SIGN IN -->
+					<form id="form-login">
+						<div class="info" >
+							<div class="circle1"></div>
+							<div class="circle2"></div>
+						
+							<div id="page-wrap">
+								<div class="box center">
+									<div class="icon center">
+									<i class="far fa-user fa-2x"></i>
+									</div>
+									<h1>login</h1>
+									<div>
+										<p>Enter Email :</p>
+										<input type="text" name="" id="email-input">
+									</div>
+									<div>
+										<p>Enter Password</p>
+										<input type="password" name="" id="password-input">
+									</div>
+									<button class="btn" type="submit">Login</button>
+									<label>or</label>
+									<button class="transparent-button" a href="" id="link-signUp">Sign Up here</a></button>
+								</div>
+							</div>
+						</div>
+					</form>
+					
+					<!-- SIGN UP -->
+					<form id="form-signUp">
+						<div class="info" >
+							<div class="circle1"></div>
+							<div class="circle2"></div>
+							<div id="page-wrap">
+								<div class="box center">
+									<div class="icon2 center">
+										<i class="far fa-user fa-2x"></i>
+									</div>
+									<h1>Sign Up</h1>
+									<div>
+										<p>Username :</p>
+										<input type="text" id="username" name="">
+									</div>
+									<div>
+										<p>Email :</p>
+										<input type="email" name="" id="email">
+									</div>
+									<div>
+										<p>Enter Password</p>
+										<input type="password" name="" id="password">
+									</div>
+									<button class="btn" type="submit">Sign Up</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="index.js"></script>
+</body>
+</html>
